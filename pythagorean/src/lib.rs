@@ -1,4 +1,5 @@
-pub fn hypotenuse(a: f64, b: f64) -> f64 {
+#[no_mangle]
+pub extern "C" fn hypotenuse(a: f64, b: f64) -> f64 {
     a.hypot(b)
 }
 
