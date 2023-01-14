@@ -15,5 +15,7 @@ FetchContent_MakeAvailable(Corrosion)
 
 corrosion_import_crate(MANIFEST_PATH pythagorean/Cargo.toml)
 
-add_executable(cmake_with_rust main.cpp User.cpp User.h pythagorean/pythagorean.h)
-target_link_libraries(cmake_with_rust PUBLIC pythagorean)
+add_subdirectory(users)
+
+add_executable(cmake_with_rust main.cpp pythagorean/pythagorean.h)
+target_link_libraries(cmake_with_rust PUBLIC pythagorean users)

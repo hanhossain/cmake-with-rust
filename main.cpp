@@ -1,5 +1,5 @@
 #include <iostream>
-#include "User.h"
+#include "users/User.h"
 #include "pythagorean/pythagorean.h"
 
 int main()
