@@ -3,6 +3,7 @@
 //
 
 #include "User.h"
+#include "userage/userage.h"
 
 User::User(std::string username) : _username(username) {
 }
@@ -12,5 +13,5 @@ std::string User::username() const {
 }
 
 int User::age() const {
-    return 42;
+    return get_user_age();
 }
