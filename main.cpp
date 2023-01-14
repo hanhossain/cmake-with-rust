@@ -10,5 +10,7 @@ int main()
     double result = hypotenuse(3.0, 4.0);
     std::cout << "leg1 = 3.0, leg2 = 4.0, hypotenuse = " << result << std::endl;
 
+    std::cout << user.username() << " is " << user.age() << " years old" << std::endl;
+
     return 0;
 }

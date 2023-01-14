@@ -11,6 +11,7 @@ class User {
 public:
     User(std::string username);
     std::string username() const;
+    int age() const;
 
 private:
     std::string _username;
